@@ -16,6 +16,7 @@ export const SLogo = css`
     padding-top: 10px;
     width: 1196px;
     height: 32px;
+    cursor: pointer;
     & > span {
         margin-left: 8px;
         color: white;
@@ -28,9 +29,12 @@ export const SLogoIconButton = css`
     width: 21px;
     height: 21px;
     font-size: 9px;
+    cursor: pointer;
+`;
+
+export const SLogoIcon = css`
     color: #06b495;
     background-color: white;
-    cursor: pointer;
 `;
 
 export const SButtonBox = css`

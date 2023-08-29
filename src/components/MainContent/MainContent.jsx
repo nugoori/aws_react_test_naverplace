@@ -11,8 +11,8 @@ function MainContent(props) {
         <div css={S.SMainContentBox}>
             <div css={S.SMainProfileBox}>
                 <button css={S.SMainProfileButton}>
-                    <div css={S.SMainProfile}>
-
+                    <div css={S.SMainProfileImgBox}>
+                        <img css={S.SMainProfileImg} src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-WJn17ZGh_xJ_b5hrk_do9fGdPEqMlDbhUdkfvEfweXIEyIEq" alt="" />
                     </div>
                     <span>
                         로그인하기

@@ -9,6 +9,9 @@ import MainContentList from './components/MainContent/MainContentList/MainConten
 import { Route, Routes } from 'react-router-dom';
 import MainArticleLayout from './components/MainArticleLayout/MainArticleLayout';
 import Feed from './pages/Feed/Feed';
+import TimeLine from './pages/TimeLine/TimeLine';
+import Review from './pages/Review/Review';
+import MainFooter from './components/MainFooter/MainFooter';
 
 function App() {
   return (
@@ -21,13 +24,13 @@ function App() {
           <MainContentList />
         </MainContent>
           
-        <MainArticleLayout >
           <Routes >
-            <Route path='feed' element={ <Feed /> }/>
-            <Route path='visit' />
-            <Route path='review' />
+            <Route path='/feed' element={ <Feed /> }/>
+            <Route path='/visit' element={ <TimeLine /> }/>
+            <Route path='/review' element={ <Review /> }/>
           </Routes>
-        </MainArticleLayout>
+
+        <MainFooter />
       </MainLayout>
     </>
   );

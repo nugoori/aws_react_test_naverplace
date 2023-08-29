@@ -34,10 +34,15 @@ export const SMainProfileButtonIcon = css`
     top: 3px;
 `;
 
-export const SMainProfile = css`
+export const SMainProfileImgBox = css`
     margin-right: 25px;
     border: 1px solid #dbdbdb;
     border-radius: 50%;
+    overflow: hidden;
+`;
+
+export const SMainProfileImg = css`
+    box-sizing: border-box;
     width: 64px;
     height: 64px;
 `;

@@ -10,7 +10,7 @@ function MainHeader(props) {
             <div css={S.SHeaderTop}>
                 <div >
                     <h1 css={S.SLogo}>
-                        <button css={S.SLogoIconButton}><SiNaver /></button>
+                        <button css={S.SLogoIconButton}><a href="https://naver.com"><SiNaver css={S.SLogoIcon}/></a></button>
                         <span>MY플레이스</span>
                     </h1>
                 </div>

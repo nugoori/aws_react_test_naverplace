@@ -6,9 +6,10 @@ export const SFeedContentContainer = css`
 
 export const SFeedContentBox = css`
     margin: 0 auto;
-    padding: 10px 0px;
+    margin-bottom: 20px;
+    padding: 10px;
     max-width: 720px;
-    height: 700px;
+    max-height: 700px;
 `;
 
 export const SFeedProfileBox = css`
@@ -31,9 +32,14 @@ export const SFeedProfileRightButton = css`
     background-color: #ffffff;
 `;
 
-export const SFeedProfileImg = css`
+export const SFeedProfileImgBox = css`
     border: 1px solid #dbdbdb;
     border-radius: 50%;
+    overflow: hidden;
+`;
+
+export const SFeedProfileImg = css`
+    box-sizing: border-box;
     width: 56px;
     height: 56px;
 `;
@@ -67,6 +73,7 @@ export const SFeedProfileLeftButton = css`
 `;
 
 export const SFeedProfileFollowButton = css`
+    border-radius: 5px;
     width: 70px;
     height: 30px;
     font-weight: 600;
@@ -108,5 +115,87 @@ export const SFeedContentImgRight_bottom = css`
     border-bottom-right-radius: 5px;
     width: 300px;
     height: 178.5px;
+`;
 
+export const SFeedContentSentence = css`
+    word-wrap: break-word;
+    max-width: 705px;
+    margin-top: 10px;
+    height: auto;
+    
+`;
+
+export const SFeedTagBox = css`
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    width: 720px;
+    height: 40px;
+`;
+
+export const SFeedEmoteBox = css`
+    width: 680px;
+    height: 33px;
+   
+    & > div > button {
+        border: none;
+        align-items: center;
+        font-size: 16px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+`;
+
+export const SFeedEmoteIcon = css`
+    position: relative;
+    top: 8px;
+    left: -5px;
+    font-size: 28px;
+`;
+
+export const SFeedLocationBox = css`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 13px 16px 12px 18px;
+    width: 670px;
+    height: 33px;
+    
+`;
+
+export const SFeedLocationLeftButton = css`
+    font-size: 16px;
+    color: #242424;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+`;
+
+export const SFeedLocationLeftButtonIcon = css`
+    position: relative;
+    top: 4px;
+    font-size: 20px;
+`;
+
+export const SFeedLocationLeftText = css`
+    font-size: 13px;
+    color: #8f8f8f;
+`;
+
+export const SFeedLocationRightButton = css`
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    color: #8f8f8f;
+    border: none;
+        background-color: transparent;
+        cursor: pointer;
+`;
+
+export const SFeedLocationRightButtonIcon = css`
+    margin-bottom: 3px;
+    font-size: 20px;
 `;

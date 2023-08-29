@@ -1,18 +1,11 @@
-import React, { Children } from 'react';
+import React from 'react';
 /** @jsxImportSource @emotion/react */
 import * as S from './Style';
-import MainHeader from '../MainHeader/MainHeader';
-import MainContent from '../MainContent/MainContent';
-import MainArticleLayout from '../MainArticleLayout/MainArticleLayout';
 
-
-function MainLayout() {
+function MainLayout({ children }) {
     return (
         <div css={S.SMainLayout}>
-            <MainHeader />
-            <MainContent />
-            <MainArticleLayout >
-            </MainArticleLayout>
+            {children}
         </div>
     );
 }

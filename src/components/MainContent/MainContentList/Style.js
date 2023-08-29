@@ -8,11 +8,11 @@ export const SContentListBox = css`
     height: 50px;
     & > li > button {
         border: none;
-        width: 73px;
+        width: auto;
         height: 50px;
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 600;
-        color: #dbdbdb;
+        color: rgba(255,255,255,.7);
         cursor: pointer;
     background-color: #06b495;
     }

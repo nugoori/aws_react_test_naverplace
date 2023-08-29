@@ -1,12 +1,11 @@
 import React from 'react';
 /** @jsxImportSource @emotion/react */
 import * as S from './Style';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function MainContentList(props) {
 
     const navigate = useNavigate();
-    const location = useLocation();
 
     const menus = [
         {
@@ -23,6 +22,16 @@ function MainContentList(props) {
             id: 3,
             name: "리뷰",
             path: "/review"
+        },
+        {
+            id: 4,
+            name: "예약·주문",
+            path: "/"
+        },
+        {
+            id: 5,
+            name: "저장",
+            path: "/"
         }
     ]
 
@@ -34,27 +43,12 @@ function MainContentList(props) {
     return (
         <ul css={S.SContentListBox}>
             {menus.map(menu => (
-                <li key={menu.id} onClick={handleClick(menu.path)}>
+                <li key={menu.id} onClick={() => handleClick(menu.path)}>
                     <button>
                         {menu.name}
                     </button>
                 </li>
             ))}
-            {/* <li  onClick={handleClick}>
-                <button>
-                    피드
-                </button>
-            </li>
-            <li >
-                <button >
-                    타임라인
-                </button>
-            </li>
-            <li>
-                <button>
-                    리뷰
-                </button>
-            </li> */}
         </ul>
 
     );
