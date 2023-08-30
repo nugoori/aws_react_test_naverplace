@@ -6,7 +6,7 @@ export const SMainContentBox = css`
 `;
 
 export const SMainProfileBox = css`
-    margin: 0px 513px;
+    margin: 0px auto;
     padding: 20px 0px 11px 0px;
     width: 335px;
     height: 120px;

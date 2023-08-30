@@ -6,15 +6,19 @@ export const SHeaderTop = css`
     align-items: center;
     border-bottom: 1px solid #aaaa;
     padding: 3px 13px 8px 15px;
-    width: 98%;
+    width: 98.54%;
     height: 46px;
     background-color: #06b495;
+`;
+
+export const SHeaderTopBox = css`
+    width: 98%;
 `;
 
 export const SLogo = css`
     display: inline-block;
     padding-top: 10px;
-    width: 1196px;
+    width: 100%;
     height: 32px;
     cursor: pointer;
     & > span {
@@ -45,13 +49,17 @@ export const SButtonBox = css`
 
 export const SCouponButton = css`
     border: none;
-    width: 36px;
-    height: 36px;
-    font-size: 12px;
     color: white;
     background-color: #06b495;
     cursor: pointer;
-    `;
+`;
+
+export const SCouponButtonImg = css`
+    padding-top: 5px;
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+`;
 
 export const SHeaderMenu = css`
     border: none;

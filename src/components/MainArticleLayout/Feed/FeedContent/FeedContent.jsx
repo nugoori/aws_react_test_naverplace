@@ -6,6 +6,18 @@ import { AiOutlineSmile, AiOutlineStar } from 'react-icons/ai';
 import { RiArrowRightSLine } from 'react-icons/ri';
 
 function FeedContent(props) {
+
+    const feedArticles = [
+        {
+            id: 1,
+            writername: "",
+            viewCount: 0,
+            follower: 0,
+            
+        }
+    ]
+
+
     return (
             < >
                 <ul css={S.SFeedContentContainer}>
@@ -41,14 +53,14 @@ function FeedContent(props) {
 
                             <div css={S.SFeedContentImgBox}>
                                 <div css={S.SFeedContentImgLeft}>
-                                    <img src="" alt="" />
+                                    <img css={S.SFeedImg} src="https://mblogthumb-phinf.pstatic.net/MjAyMjEyMjJfMTI2/MDAxNjcxNzE2ODk3NDY4.RYl-xVDJdLGRupbBcgPL96MxcKUWLLCb9HrAt75zUDkg.IdrgQZ6SREOywfI3oqfR1R73jnchC7HQisLAcDnIOoAg.JPEG.cosmopolitan-ksj/SE-3ad31732-3fe4-4a64-8f26-163babce914b.jpg?type=w800" alt="" />
                                 </div>
                                 <div>
                                     <div css={S.SFeedContentImgRight_top}>
-                                        <img src="" alt="" />
+                                        <img css={S.SFeedImg} src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcfuuxP%2FbtrdcPUpI7H%2FtAcAhN72uZYkBE30y5bwlk%2Fimg.jpg" alt="" />
                                     </div>
                                     <div css={S.SFeedContentImgRight_bottom}>
-                                        <img src="" alt="" />
+                                        <img css={S.SFeedImg} src="https://img.catpre.com/web/catpre/event/popular_keyword_theme/13_pc_main_page_banner_2438.jpg" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -56,7 +68,7 @@ function FeedContent(props) {
                             <div css={S.SFeedContentSentence}>
                                 testtest
                             </div>
-
+                            {/* 느낀점 태그 */}
                             <div css={S.SFeedTagBox}>
                                 <img src="" alt="" />
                                 <span></span>

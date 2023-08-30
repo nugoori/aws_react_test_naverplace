@@ -25,6 +25,69 @@ function FeedList(props) {
         setIsDrag(false);
     }
 
+    const tags = [
+        {
+            id: 1,
+            name: "한식"
+        },
+        {
+            id: 2,
+            name: "물놀이"
+        },
+        {
+            id: 3,
+            name: "카페"
+        },
+        {
+            id: 4,
+            name: "피크닉"
+        },
+        {
+            id: 5,
+            name: "양식"
+        },
+        {
+            id: 6,
+            name: "클래스·소품"
+        },
+        {
+            id: 7,
+            name: "일식"
+        },
+        {
+            id: 8,
+            name: "테마파크"
+        },
+        {
+            id: 9,
+            name: "등산·트레킹"
+        },
+        {
+            id: 10,
+            name: "분식/치킨"
+        },
+        {
+            id: 11,
+            name: "체험관광"
+        },
+        {
+            id: 12,
+            name: "중식"
+        },
+        {
+            id: 13,
+            name: "숙박"
+        },
+        {
+            id: 14,
+            name: "아시아/퓨전음식"
+        },
+        {
+            id: 15,
+            name: "뷔페/레스토랑"
+        }
+    ]
+
     return (
         <>
             <div css={S.SFeedTagContainer}>
@@ -44,58 +107,12 @@ function FeedList(props) {
                             아이와 함께
                         </button>
                         <button>
-                            아무리 길어져도 갠찮은가
+                            캠핑
                         </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
-                        <button>
-                            한식
-                        </button>
+                        {tags.map(tag => (
+                            <button key={tag.id}>{tag.name}</button>
+                        ))}
                     </div>
-                    {/* <button css={S.SFeedListToRight}>
-                        <span>
-                            <MdOutlineKeyboardArrowLeft />
-                        </span>
-                    </button>
-                    <button css={S.SFeedListToLeft}>
-                        <span>
-                            <MdKeyboardArrowRight />
-                        </span>
-                    </button> */}
                 </div>
             </div>  
         </>

@@ -96,25 +96,34 @@ export const SFeedContentImgBox = css`
 export const SFeedContentImgLeft = css`
     margin-right: 1px;
     border: 1px solid #dddddd;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     width: 400px;
     height: 360px;
+    overflow: hidden;
 `;
 
 export const SFeedContentImgRight_top = css`
     margin-bottom: 1px;
     border: 1px solid #dddddd;
-    border-top-right-radius: 5px;
+    border-top-right-radius: 10px;
     width: 300px;
     height: 178.5px;
+    overflow: hidden;
 `;
 
 export const SFeedContentImgRight_bottom = css`
     border: 1px solid #dddddd;
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 10px;
     width: 300px;
     height: 178.5px;
+    overflow: hidden;
+`;
+
+export const SFeedImg = css`
+    width: 100%;
+    height: 100%;
+    
 `;
 
 export const SFeedContentSentence = css`

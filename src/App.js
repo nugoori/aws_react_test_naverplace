@@ -7,7 +7,6 @@ import MainHeader from './components/MainHeader/MainHeader';
 import MainContent from './components/MainContent/MainContent';
 import MainContentList from './components/MainContent/MainContentList/MainContentList';
 import { Route, Routes } from 'react-router-dom';
-import MainArticleLayout from './components/MainArticleLayout/MainArticleLayout';
 import Feed from './pages/Feed/Feed';
 import TimeLine from './pages/TimeLine/TimeLine';
 import Review from './pages/Review/Review';
